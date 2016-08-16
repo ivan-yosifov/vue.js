@@ -81,7 +81,7 @@ p strong{
   font-size: 18px;
 }
 p:before{
-  content: '✎';
+  content: '\270E';
   display: inline-block;
   margin-right: 5px;
   font-weight: normal;
