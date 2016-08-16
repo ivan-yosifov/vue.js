@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inline Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main" v-cloak v-on:click="hideTooltip">
+    <div class="tooltip" v-on:click.stop v-if="show_tooltip">
+      <input type="text" v-model="text_content">
+    </div>
+
+    <p v-on:click.stop="toggleTooltip">{{text_content}}</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
